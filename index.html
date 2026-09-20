@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Bite | Cuchareables & Minis 🥄✨</title>
+  
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Íconos FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pinkLight: '#FFF0F5',
+            pinkSoft: '#FFD1DC',
+            pinkMedium: '#FF94B1',
+            pinkDeep: '#FF6B8B',
+            pinkAccent: '#FF3B6B',
+            chocoDark: '#4A2A18',
+            chocoMedium: '#7A4325',
+          },
+          fontFamily: {
+            fredoka: ['Fredoka', 'sans-serif'],
+            quicksand: ['Quicksand', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: #FFF0F5;
+      color: #4A2A18;
+    }
+
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Fredoka', cursive;
+    }
+
+    .sweet-card {
+      background: rgba(255, 255, 255, 0.95);
+      border: 3px solid #FFD1DC;
+      box-shadow: 0 10px 25px -5px rgba(255, 148, 177, 0.25);
+      transition: all 0.3s ease;
+    }
+    .sweet-card:hover {
+      transform: translateY(-5px);
+      border-color: #FF94B1;
+    }
+
+    .btn-sweet {
+      background: linear-gradient(135deg, #FF6B8B, #FF3B6B);
+      color: white;
+      box-shadow: 0 6px 18px rgba(255, 59, 107, 0.35);
+      transition: all 0.25s ease;
+    }
+    .btn-sweet:hover {
+      background: linear-gradient(135deg, #FF3B6B, #E62052);
+      transform: translateY(-2px);
+    }
+
+    .bg-dots {
+      background-image: radial-gradient(#FFB6C1 1.5px, transparent 1.5px), radial-gradient(#FFB6C1 1.5px, #FFF0F5 1.5px);
+      background-size: 60px 60px;
+      background-position: 0 0, 30px 30px;
+    }
+  </style>
+</head>
+<body class="bg-dots min-h-screen flex flex-col justify-between">
+
+  <!-- ANUNCIO SUPERIOR -->
+  <div class="bg-gradient-to-r from-pinkDeep via-pinkAccent to-pinkDeep text-white text-center py-2.5 px-4 font-heading font-bold text-xs sm:text-sm tracking-wider shadow-md z-50 flex items-center justify-center gap-2">
+    <span>✨</span> PREVENTA - Elegí tu cuchareable o mini y escribinos <span>✨</span>
+  </div>
+
+  <!-- ENCABEZADO -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b-4 border-pinkSoft">
+    <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="https://instagram.com/sweetbite_iam" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+        <div class="w-12 h-12 bg-pinkSoft rounded-full flex items-center justify-center border-2 border-pinkDeep overflow-hidden p-1 shadow-sm">
+          <img src="https://i.postimg.cc/0jxDTgNx/sweet-bite-transparent.png" alt="Sweet Bite Logo" class="w-full h-full object-contain" onerror="this.src='https://placehold.co/48x48/FFD1DC/4A2A18?text=SB'">
+        </div>
+        <div>
+          <span class="text-2xl font-bold text-chocoDark font-heading block leading-none">Sweet Bite</span>
+          <span class="text-xs font-semibold text-pinkDeep tracking-wider uppercase">Cuchareables & Minis</span>
+        </div>
+      </a>
+
+      <!-- Navegación -->
+      <nav class="hidden md:flex items-center gap-6 font-semibold text-chocoDark text-sm">
+        <a href="#inicio" class="hover:text-pinkDeep">Inicio</a>
+        <a href="#cuchareables" class="hover:text-pinkDeep">Cuchareables</a>
+        <a href="#minis" class="hover:text-pinkDeep">Minis & Dips</a>
+        <a href="#pedido" class="hover:text-pinkDeep">Armar Pedido</a>
+      </nav>
+
+      <!-- Botón Instagram -->
+      <a href="https://instagram.com/sweetbite_iam" target="_blank" rel="noopener noreferrer" 
+         class="btn-sweet px-4 py-2.5 rounded-full font-bold text-sm flex items-center gap-2">
+        <i class="fa-brands fa-instagram text-lg"></i>
+        <span>@sweetbite_iam</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- SECCIÓN INICIAL -->
+  <section id="inicio" class="pt-10 pb-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        
+        <!-- Texto Izquierda -->
+        <div class="text-center md:text-left space-y-6">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pinkSoft/60 border border-pinkMedium text-chocoDark font-bold text-xs uppercase">
+            <span>💖</span> ¡Conocé a Sweetie & probá lo más rico!
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl font-extrabold text-chocoDark leading-tight">
+            Tortas en envase cuchareables con <span class="text-pinkDeep underline decoration-pinkSoft">mucho sabor</span>.
+          </h1>
+
+          <p class="text-lg text-chocoMedium font-medium">
+            Descubrí la experiencia de nuestros <strong>Cuchareables</strong> artesanales e irresistibles <strong>Minis</strong>. ¡Nos vemos el 22 de septiembre! 📅✨
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-2">
+            <a href="#cuchareables" class="btn-sweet px-8 py-4 rounded-2xl font-bold text-base flex items-center justify-center gap-2">
+              <i class="fa-solid fa-spoon"></i> Ver Cuchareables
+            </a>
+            <a href="#pedido" class="bg-white border-2 border-pinkMedium text-chocoDark hover:bg-pinkLight px-8 py-4 rounded-2xl font-bold text-base flex items-center justify-center gap-2">
+              <i class="fa-solid fa-basket-shopping text-pinkDeep"></i> Pedir por Instagram
+            </a>
+          </div>
+        </div>
+
+        <!-- Mascota Interactiva Principal (Sweetie) -->
+        <div class="flex justify-center">
+          <div class="sweet-card p-6 rounded-3xl max-w-sm w-full text-center relative">
+            <div class="absolute -top-4 -right-2 bg-pinkAccent text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+              ✨ Mascotita Oficial
+            </div>
+
+            <!-- Contenedor Foto Principal con interactividad de corazones -->
+            <div id="heroMascotBox" onclick="triggerHearts(event)" class="w-full h-72 flex items-center justify-center p-2 relative cursor-pointer group">
+              <div class="w-full h-full flex items-center justify-center overflow-hidden rounded-2xl">
+                <img src="https://i.postimg.cc/JhgfJnkF/Whats-App-Image-2026-08-14-at-12-48-54.jpg" alt="Sweetie" class="max-w-full max-h-full object-contain rounded-2xl transition-all duration-300 border-0 group-hover:scale-105" onerror="this.src='https://placehold.co/300x300/FFD1DC/4A2A18?text=Sweetie'">
+              </div>
+              <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-pinkDeep/10 rounded-2xl pointer-events-none">
+                <span class="text-white font-heading font-bold text-sm bg-pinkDeep/80 px-3 py-1 rounded-full shadow">¡Toca a Sweetie! 💖</span>
+              </div>
+            </div>
+
+            <div class="mt-2 p-3 bg-pinkLight rounded-2xl border border-pinkSoft">
+              <h3 id="heroMascotTitle" class="font-bold text-chocoDark text-lg">Sweetie 💖</h3>
+              <p id="heroMascotDesc" class="text-xs text-chocoMedium mt-1">"¡Lista para endulzar cada momento contigo!"</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CUCHAREABLES -->
+  <section id="cuchareables" class="py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="bg-pinkMedium text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest inline-block mb-3">
+          PREVENTA
+        </span>
+        <h2 class="text-4xl font-bold text-chocoDark">Tortas Cuchareables 🍰</h2>
+        <p class="text-chocoMedium text-base mt-2">
+          Distintos sabores de tortas en envases listos para comer
+        </p>
+      </div>
+
+      <!-- Grilla con tarjetas -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+
+        <div class="sweet-card rounded-3xl p-4 flex flex-col justify-between">
+          <div>
+            <div class="w-full h-36 bg-pinkLight rounded-2xl overflow-hidden mb-3 border border-pinkSoft">
+              <img src="https://i.postimg.cc/yxVrL6bt/oreo.jpg" alt="Cuchareable Oreo" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x150/FFD1DC/4A2A18?text=Oreo'">
+            </div>
+            <h3 class="text-base font-bold text-chocoDark">Cuchareable Oreo</h3>
+            <p class="text-[11px] text-chocoMedium mt-1">Crema de Oreo, bizcochuelo de chocolate y pedacitos de Oreo. ✨</p>
+          </div>
+          <div class="mt-4 flex items-center justify-between border-t border-pinkSoft pt-3">
+            <span class="text-sm font-bold text-pinkDeep">$5.200</span>
+            <button onclick="addToOrder('Cuchareable Oreo', 5200)" class="btn-sweet px-3 py-1.5 rounded-xl text-[11px] font-bold">+ Agregar</button>
+          </div>
+        </div>
+
+        <div class="sweet-card rounded-3xl p-4 flex flex-col justify-between">
+          <div>
+            <div class="w-full h-36 bg-pinkLight rounded-2xl overflow-hidden mb-3 border border-pinkSoft">
+              <img src="https://i.postimg.cc/yWCC6CQ0/chocotorta.jpg" alt="Chocotorta Sweet" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x150/FFD1DC/4A2A18?text=Chocotorta'">
+            </div>
+            <h3 class="text-base font-bold text-chocoDark">Chocotorta Sweet</h3>
+            <p class="text-[11px] text-chocoMedium mt-1">Chocolinas en café, crema cremosa de dulce de leche y queso crema.</p>
+          </div>
+          <div class="mt-4 flex items-center justify-between border-t border-pinkSoft pt-3">
+            <span class="text-sm font-bold text-pinkDeep">$5.200</span>
+            <button onclick="addToOrder('Chocotorta Sweet', 5200)" class="btn-sweet px-3 py-1.5 rounded-xl text-[11px] font-bold">+ Agregar</button>
+          </div>
+        </div>
+
+        <div class="sweet-card rounded-3xl p-4 flex flex-col justify-between">
+          <div>
+            <div class="w-full h-36 bg-pinkLight rounded-2xl overflow-hidden mb-3 border border-pinkSoft">
+              <img src="https://i.postimg.cc/76cfVbhV/tiramisu.jpg" alt="Tiramisú Especial" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x150/FFD1DC/4A2A18?text=Tiramisu'">
+            </div>
+            <h3 class="text-base font-bold text-chocoDark">Tiramisú Especial</h3>
+            <p class="text-[11px] text-chocoMedium mt-1">Vainillas bañadas en café, crema de mascarpone y cacao en polvo.🤎</p>
+          </div>
+          <div class="mt-4 flex items-center justify-between border-t border-pinkSoft pt-3">
+            <span class="text-sm font-bold text-pinkDeep">$5.200</span>
+            <button onclick="addToOrder('Tiramisú Especial', 5200)" class="btn-sweet px-3 py-1.5 rounded-xl text-[11px] font-bold">+ Agregar</button>
+          </div>
+        </div>
+
+        <div class="sweet-card rounded-3xl p-4 flex flex-col justify-between">
+          <div>
+            <div class="w-full h-36 bg-pinkLight rounded-2xl overflow-hidden mb-3 border border-pinkSoft">
+              <img src="https://i.postimg.cc/6Txx6xbw/frutilla.jpg" alt="Frutillas & Crema" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x150/FFD1DC/4A2A18?text=Frutillas'">
+            </div>
+            <h3 class="text-base font-bold text-chocoDark">Frutillas & Crema</h3>
+            <p class="text-[11px] text-chocoMedium mt-1">Bizcochuelo de vainilla, crema y frutillas con azúcar. 🍓</p>
+          </div>
+          <div class="mt-4 flex items-center justify-between border-t border-pinkSoft pt-3">
+            <span class="text-sm font-bold text-pinkDeep">$5.000</span>
+            <button onclick="addToOrder('Frutillas & Crema', 5000)" class="btn-sweet px-3 py-1.5 rounded-xl text-[11px] font-bold">+ Agregar</button>
+          </div>
+        </div>
+
+        <div class="sweet-card rounded-3xl p-4 flex flex-col justify-between">
+          <div>
+            <div class="w-full h-36 bg-pinkLight rounded-2xl overflow-hidden mb-3 border border-pinkSoft">
+              <img src="https://i.postimg.cc/dDccQcNw/franui.jpg" alt="Franui Cuchareable" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x150/FFD1DC/4A2A18?text=Franui'">
+            </div>
+            <h3 class="text-base font-bold text-chocoDark">Franui Cuchareable</h3>
+            <p class="text-[11px] text-chocoMedium mt-1">Bizcochuelo de chocolate, mousse de chocolate y Franui. 🍫</p>
+          </div>
+          <div class="mt-4 flex items-center justify-between border-t border-pinkSoft pt-3">
+            <span class="text-sm font-bold text-pinkDeep">$5.800</span>
+            <button onclick="addToOrder('Franui Cuchareable', 5800)" class="btn-sweet px-3 py-1.5 rounded-xl text-[11px] font-bold">+ Agregar</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MINIS & DIPS -->
+  <section id="minis" class="py-16 bg-white/80 border-y-4 border-pinkSoft">
+    <div class="max-w-7xl mx-auto px-4">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="bg-chocoDark text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest inline-block mb-3">
+          Envases Minis & Bebidas
+        </span>
+        <h2 class="text-4xl font-bold text-chocoDark flex items-center justify-center gap-2">
+          <span>Bocaditos & Bebidas</span>
+          <span class="text-3xl" title="Cucharita y Moño">🥄🎀</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <div class="sweet-card p-6 rounded-3xl flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-4">
+              <span class="text-5xl">🍫</span>
+              <div>
+                <h3 class="text-xl font-bold text-chocoDark">Mini Brownies</h3>
+                <p class="text-xs text-chocoMedium">Cubos húmedos de puro chocolate semi amargo.</p>
+                <p class="text-xs font-bold text-pinkDeep mt-2">Incluye Dip a elección</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 flex items-center justify-between border-t border-pinkSoft pt-3">
+            <span class="text-lg font-bold text-pinkDeep">$2.700</span>
+            <button onclick="addToOrder('Mini Brownies', 2700)" class="btn-sweet px-4 py-2 rounded-xl text-xs font-bold">+ Agregar</button>
+          </div>
+        </div>
+
+        <div class="sweet-card p-6 rounded-3xl flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-4">
+              <span class="text-5xl">🍩</span>
+              <div>
+                <h3 class="text-xl font-bold text-chocoDark">Mini Donas con Chocolate</h3>
+                <p class="text-xs text-chocoMedium">Minidonitas suaves bañadas en chocolate irresistible.</p>
+                <p class="text-xs font-bold text-pinkDeep mt-2">Sin dip</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 flex items-center justify-between border-t border-pinkSoft pt-3">
+            <span class="text-lg font-bold text-pinkDeep">$2.500</span>
+            <button onclick="addToOrder('Mini Donas con Chocolate', 2500)" class="btn-sweet px-4 py-2 rounded-xl text-xs font-bold">+ Agregar</button>
+          </div>
+        </div>
+
+        <!-- Bebida: Vaso de Chocolatada -->
+        <div class="sweet-card p-6 rounded-3xl flex flex-col justify-between border-dashed border-2 border-pinkDeep">
+          <div>
+            <div class="flex items-center gap-4">
+              <span class="text-5xl">🥛</span>
+              <div>
+                <h3 class="text-xl font-bold text-chocoDark">Vaso de Chocolatada</h3>
+              </div>
+            </div>
+            <div class="mt-3 bg-pinkLight p-2.5 rounded-xl border border-pinkSoft text-[11px] text-chocoDark font-semibold text-center">
+              📍 ¡Solo se compra en la feria! (No se encarga por acá)
+            </div>
+          </div>
+          <div class="mt-4 flex items-center justify-between pt-2 border-t border-pinkSoft">
+            <span class="text-xs font-bold text-pinkDeep">Exclusivo en puesto</span>
+            <span class="text-xs bg-pinkSoft px-2.5 py-1 rounded-full text-chocoDark font-bold">En feria</span>
+          </div>
+        </div>
+
+        <!-- Bebida: Vaso de Gaseosa -->
+        <div class="sweet-card p-6 rounded-3xl flex flex-col justify-between border-dashed border-2 border-pinkDeep">
+          <div>
+            <div class="flex items-center gap-4">
+              <span class="text-5xl">🥤</span>
+              <div>
+                <h3 class="text-xl font-bold text-chocoDark">Vaso de Gaseosa</h3>
+              </div>
+            </div>
+            <div class="mt-3 bg-pinkLight p-2.5 rounded-xl border border-pinkSoft text-[11px] text-chocoDark font-semibold text-center">
+              📍 ¡Solo se compra en la feria! (No se encarga por acá)
+            </div>
+          </div>
+          <div class="mt-4 flex items-center justify-between pt-2 border-t border-pinkSoft">
+            <span class="text-xs font-bold text-pinkDeep">Exclusivo en puesto</span>
+            <span class="text-xs bg-pinkSoft px-2.5 py-1 rounded-full text-chocoDark font-bold">En feria</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CARRITO -->
+  <section id="pedido" class="py-16">
+    <div class="max-w-4xl mx-auto px-4">
+      
+      <div class="sweet-card rounded-3xl p-6 sm:p-8">
+        <h3 class="text-2xl font-bold text-chocoDark border-b border-pinkSoft pb-4 flex justify-between items-center">
+          <span>Tu Pedido para Instagram</span>
+          <span id="cartCount" class="text-xs bg-pinkSoft px-3 py-1 rounded-full">0 ítems</span>
+        </h3>
+
+        <div id="cartItemsContainer" class="py-6 space-y-3 min-h-[100px]">
+          <p class="text-center text-xs text-chocoMedium py-4">Seleccioná lo que te guste para armar tu consulta.</p>
+        </div>
+
+        <!-- SECTOR DE SELECCIÓN DE DIP (Visible solo si hay Mini Brownies en el carrito) -->
+        <div id="dipSectionContainer" class="border-t border-pinkSoft pt-4 mt-2 hidden">
+          <label class="block text-sm font-bold text-chocoDark uppercase mb-3">🍯 Elegí tu Dip favorito:</label>
+          <div class="grid grid-cols-2 gap-4">
+            <label class="flex items-center gap-3 p-3 rounded-xl border-2 border-pinkSoft bg-pinkLight cursor-pointer hover:border-pinkDeep transition-all">
+              <input type="radio" name="dipOption" value="Salsa de Chocolate" class="accent-pinkDeep" checked>
+              <span class="font-bold text-xs text-chocoDark">🍫 Salsa de Chocolate</span>
+            </label>
+            <label class="flex items-center gap-3 p-3 rounded-xl border-2 border-pinkSoft bg-pinkLight cursor-pointer hover:border-pinkDeep transition-all">
+              <input type="radio" name="dipOption" value="Dulce de Leche" class="accent-pinkDeep">
+              <span class="font-bold text-xs text-chocoDark">🍯 Dulce de Leche</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 bg-pinkLight p-4 rounded-2xl border border-pinkSoft">
+          <div>
+            <span class="text-xs text-chocoMedium font-semibold block">Total Estimado</span>
+            <span id="totalPrice" class="text-2xl font-extrabold text-pinkDeep">~</span>
+          </div>
+
+          <button onclick="sendOrderToInstagram()" class="btn-sweet w-full sm:w-auto px-8 py-3 rounded-2xl font-bold text-sm flex items-center justify-center gap-2">
+            <i class="fa-brands fa-instagram text-lg"></i> Enviar Pedido a @sweetbite_iam
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MODAL DE ÉXITO VISIBLE PARA INSTAGRAM -->
+  <div id="instagramModal" class="fixed inset-0 bg-chocoDark/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden opacity-0 transition-opacity duration-300">
+    <div class="sweet-card max-w-md w-full p-6 sm:p-8 rounded-3xl text-center space-y-4 shadow-2xl transform scale-95 transition-transform duration-300" id="modalContent">
+      <div class="w-16 h-16 bg-pinkSoft rounded-full flex items-center justify-center mx-auto border-2 border-pinkDeep text-3xl shadow-inner">
+        ✨
+      </div>
+      <h3 class="text-2xl font-bold text-chocoDark font-heading">¡Pedido copiado con éxito!</h3>
+      <p class="text-xs sm:text-sm text-chocoMedium leading-relaxed">
+        Tu mensaje ya está copiado en el portapapeles. Al abrir Instagram, <strong>mantené presionado el chat</strong> de <span class="text-pinkDeep font-bold">@sweetbite_iam</span> y elegí <strong>Pegar</strong> para enviarnos tu pedido 💌
+      </p>
+      
+      <div class="pt-2 flex flex-col gap-2">
+        <a href="https://instagram.com/sweetbite_iam" target="_blank" rel="noopener noreferrer" 
+           class="btn-sweet w-full py-3.5 rounded-2xl font-bold text-sm flex items-center justify-center gap-2 shadow-lg">
+          <i class="fa-brands fa-instagram text-lg"></i> Abrir @sweetbite_iam en Instagram
+        </a>
+        <button onclick="closeInstagramModal()" class="w-full py-3 rounded-2xl font-bold text-xs text-chocoMedium bg-pinkLight hover:bg-pinkSoft transition-colors">
+          Entendido, cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- APARTADO SEGUINOS EN INSTAGRAM -->
+  <section class="py-12 bg-pinkLight/50 border-t border-pinkSoft">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <div class="sweet-card p-6 rounded-3xl inline-block w-full max-w-md">
+        <h3 class="font-heading text-xl font-bold text-chocoDark mb-2 flex items-center justify-center gap-2">
+          <i class="fa-brands fa-instagram text-pinkDeep text-2xl"></i> ¡Seguinos en Instagram!
+        </h3>
+        <p class="text-xs text-chocoMedium mb-4">Enterate de todas las novedades y hacé tus consultas directamente por mensaje privado.</p>
+        
+        <div class="flex justify-center mb-4">
+          <a href="https://postimg.cc/68Kn0qpP" target="_blank" rel="noopener noreferrer" class="w-24 h-24 rounded-2xl overflow-hidden border-2 border-pinkSoft shadow-sm inline-block hover:opacity-90 transition-opacity">
+            <img src="https://i.postimg.cc/g2XsG6FG/Whats-App-Image-2026-08-15-at-13-08-49.jpg" alt="Seguinos en Instagram" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/96x96/FFD1DC/4A2A18?text=IG'">
+          </a>
+        </div>
+
+        <a href="https://instagram.com/sweetbite_iam" target="_blank" rel="noopener noreferrer" class="btn-sweet inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-xs font-bold shadow-md">
+          <i class="fa-brands fa-instagram"></i> Ir a @sweetbite_iam
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-chocoDark text-pinkSoft py-8 border-t-4 border-pinkMedium text-center text-xs space-y-2">
+    <p>© 2026 Sweet Bite. Cuchareables & Minis por @sweetbite_iam 💖</p>
+    <p class="text-[10px] text-pinkSoft/60 tracking-wider">Hecho por: Victoria Greven, Josefina Frione, Morena Roth, Kiara Latronico y Valentina Rizzo, 6°A</p>
+  </footer>
+
+  <!-- Toast Notificaciones -->
+  <div id="toast" class="fixed bottom-6 right-6 bg-chocoDark text-white px-4 py-2.5 rounded-xl shadow-xl text-xs font-bold opacity-0 transition-opacity pointer-events-none z-50">
+    <span id="toastMsg">Mensaje</span>
+  </div>
+
+  <script>
+    // CARRITO DE COMPRAS
+    let cart = [];
+
+    // ANIMACIÓN DE CORAZONES AL TOCAR A SWEETIE
+    function triggerHearts(event) {
+      const box = document.getElementById('heroMascotBox');
+      const rect = box.getBoundingClientRect();
+      
+      for (let i = 0; i < 5; i++) {
+        const heart = document.createElement('div');
+        heart.innerHTML = '💖';
+        heart.style.position = 'fixed';
+        heart.style.left = (rect.left + rect.width / 2 + (Math.random() * 60 - 30)) + 'px';
+        heart.style.top = (rect.top + rect.height / 2 + (Math.random() * 40 - 20)) + 'px';
+        heart.style.fontSize = (20 + Math.random() * 20) + 'px';
+        heart.style.pointerEvents = 'none';
+        heart.style.zIndex = '9999';
+        heart.style.transition = 'all 1s ease-out';
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+          heart.style.transform = `translate(${(Math.random() * 100 - 50)}px, -${100 + Math.random() * 80}px) scale(1.4)`;
+          heart.style.opacity = '0';
+        }, 20);
+
+        setTimeout(() => {
+          heart.remove();
+        }, 1000);
+      }
+      showToast('¡Sweetie te manda mucho amor! 💖');
+    }
+
+    function addToOrder(name, price) {
+      const item = cart.find(i => i.name === name);
+      if (item) {
+        item.quantity++;
+      } else {
+        cart.push({ name, price, quantity: 1 });
+      }
+      renderCart();
+      showToast(`¡${name} agregado! 🥄`);
+    }
+
+    function removeFromOrder(index) {
+      cart.splice(index, 1);
+      renderCart();
+      showToast(`Ítem eliminado ❌`);
+    }
+
+    function renderCart() {
+      const container = document.getElementById('cartItemsContainer');
+      const cartCount = document.getElementById('cartCount');
+      const totalPrice = document.getElementById('totalPrice');
+      const dipSection = document.getElementById('dipSectionContainer');
+
+      const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
+      const grandTotal = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+
+      if (cartCount) cartCount.innerText = `${totalItems} ítem${totalItems === 1 ? '' : 's'}`;
+      if (totalPrice) totalPrice.innerText = `$${grandTotal.toLocaleString('es-AR')}`;
+
+      // Verificar si hay algún Mini Brownies que requiera dip en el carrito
+      const hasMiniBrownies = cart.some(item => item.name.includes('Mini Brownies'));
+      if (dipSection) {
+        if (hasMiniBrownies) {
+          dipSection.classList.remove('hidden');
+        } else {
+          dipSection.classList.add('hidden');
+        }
+      }
+
+      if (!container) return;
+
+      if (cart.length === 0) {
+        container.innerHTML = '<p class="text-center text-xs text-chocoMedium py-4">Seleccioná lo que te guste para armar tu consulta.</p>';
+        return;
+      }
+
+      let html = '';
+      cart.forEach((item, index) => {
+        html += `
+          <div class="relative flex items-center justify-between p-4 bg-white rounded-2xl border-2 border-pinkSoft shadow-sm">
+            <div>
+              <p class="font-bold text-sm text-chocoDark">${item.name}</p>
+              <span class="text-xs text-pinkDeep font-semibold">$${item.price.toLocaleString('es-AR')} c/u (x${item.quantity})</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <span class="font-bold text-sm text-chocoDark">$${(item.price * item.quantity).toLocaleString('es-AR')}</span>
+              <button onclick="removeFromOrder(${index})" class="w-8 h-8 rounded-full bg-pinkLight hover:bg-pinkSoft text-pinkDeep hover:text-pinkAccent flex items-center justify-center transition-all border border-pinkMedium" title="Eliminar ítem">
+                <i class="fa-solid fa-xmark text-sm font-bold"></i>
+              </button>
+            </div>
+          </div>
+        `;
+      });
+      container.innerHTML = html;
+    }
+
+    function sendOrderToInstagram() {
+      if (cart.length === 0) {
+        showToast('⚠️ Agregá un producto al carrito primero');
+        return;
+      }
+
+      const hasMiniBrownies = cart.some(item => item.name.includes('Mini Brownies'));
+      const selectedDipInput = document.querySelector('input[name="dipOption"]:checked');
+      const selectedDip = selectedDipInput ? selectedDipInput.value : 'Salsa de Chocolate';
+      const grandTotal = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+
+      let text = "¡Hola Sweet Bite! 🥄✨ Quisiera realizar el siguiente pedido:\n\n";
+
+      cart.forEach(item => {
+        text += `• ${item.quantity}x ${item.name} ($${(item.price * item.quantity).toLocaleString('es-AR')})\n`;
+      });
+
+      if (hasMiniBrownies) {
+        text += `\n🍯 Dip elegido (para Mini Brownies): ${selectedDip}\n`;
+      }
+
+      text += `\n💰 Total estimado: $${grandTotal.toLocaleString('es-AR')}\n`;
+      text += "\n¡Muchas gracias! 💕";
+
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.style.position = "fixed";
+      textArea.style.top = "0";
+      textArea.style.left = "0";
+      textArea.style.opacity = "0";
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      try { 
+        document.execCommand('copy'); 
+      } catch(e) {}
+      document.body.removeChild(textArea);
+
+      const modal = document.getElementById('instagramModal');
+      const content = document.getElementById('modalContent');
+      if (modal) {
+        modal.classList.remove('hidden');
+        setTimeout(() => {
+          modal.classList.remove('opacity-0');
+          if (content) content.classList.remove('scale-95');
+        }, 10);
+      }
+    }
+
+    function closeInstagramModal() {
+      const modal = document.getElementById('instagramModal');
+      const content = document.getElementById('modalContent');
+      if (modal) {
+        modal.classList.add('opacity-0');
+        if (content) content.classList.add('scale-95');
+        setTimeout(() => {
+          modal.classList.add('hidden');
+        }, 300);
+      }
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toastMsg');
+      if (toastMsg) toastMsg.innerText = msg;
+      if (toast) {
+        toast.style.opacity = '1';
+        setTimeout(() => {
+          toast.style.opacity = '0';
+        }, 2500);
+      }
+    }
+  </script>
+</body>
+</html>
